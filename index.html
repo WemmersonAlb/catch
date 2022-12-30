@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="tabuleiro.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>CATCH!</h1>
+      <div id="tabuleiro"></div>
+      <div id="contador">
+        <label for="dimensoes">Dimensões</label>
+        <input type="number" name="dimensoes" id="dimensoes" value="8" />
+        <input type="button" value="RESTART" id="restart" />
+      </div>
+      <div id="mensagem"><p></p></div>
+      <div id="placar">
+        <table>
+            <tr>
+                <th>RED</th>
+                <th>BLUE</th>
+            </tr>
+            <tr>
+                <td id="red"></td>
+                <td id="blue"></td>
+            </tr>
+        </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
