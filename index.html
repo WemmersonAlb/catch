@@ -9,13 +9,62 @@
     <script src="tabuleiro.js" defer></script>
   </head>
   <body>
+    <div class="fade" id="fade">
+
+    <div class="modal">
+      <div class="buttondivEsquerda">
+        <button class="button" id="jogar">X</button>
+
+      </div>
+      <div class="headerModal">
+        <h1>Bem vindo ao Catch!!!</h1>
+      </div>
+      <div class="bodyModal">
+        <p>
+          Catch é um jogo de tabuleiro desenvolvido por Reiner Knizia em 1995. Ele é um jogo de estratégia para dois jogadores. Originalmente ele é jogado em um tabuleiro de 8 × 8.
+        </p>
+        <div class="imgDireita">
+          <p>
+            O primeiro jogador preenche duas casas na horizontal.
+          </p>
+          <img src="vermelho.png" alt="Demonstração da jogada" style="width: 200px;">
+        </div>
+        <div class="imgEsquerda">
+          <p>
+            O segundo jogador preenche duas casas na vertical.
+          </p>
+          <img src="azul.png" alt="Demonstração da jogada" style="width: 150px;">
+        </div>
+        <div class="imgEmbaixo">
+          <p>
+            Quando uma área contendo 1, 2, ou 3 casas estiver cercada, elas serão marcadas com um 'X' na cor do jogador corrente.
+          </p>
+          <div class="linha">
+            <img src="umamarca.png" alt="Demonstração da jogada" style="width: 150px;">
+            <img src="duasmarcas.png" alt="Demonstração da jogada" style="width: 150px; height: 100px;">
+            <img src="tresmarcas.png" alt="Demonstração da jogada" style="width: 200px;">
+          </div>
+        </div>
+        <div class="imgEmbaixo">
+          <p>
+            Ao final, contamos a quantidade de 'X' de cada jogador, quem possuir mais ganha!
+          </p>
+          <img src="vitoria.png" alt="Demonstração da jogada" style="width: 250px;">
+        </div>
+        <div class="buttondiv">
+          <button class="button" id="jogar1">Vamos Jogar!</button>
+
+        </div>
+      </div>
+    </div>
+    </div>
     <main>
       <h1>CATCH!</h1>
       <div id="tabuleiro"></div>
       <div id="contador">
         <label for="dimensoes">Dimensões</label>
         <input type="number" name="dimensoes" id="dimensoes" value="8" />
-        <input type="button" value="RESTART" id="restart" />
+        <input type="button" value="RESTART" id="restart" class="button" />
       </div>
       <div id="mensagem"><p></p></div>
       <div id="placar">

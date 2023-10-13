@@ -1,3 +1,17 @@
+const jogar = document.querySelector('#jogar');
+const jogar1 = document.querySelector('#jogar1');
+
+function jogarCatch(){
+    const fade = document.querySelector('#fade');
+    fade.style.display ='none';
+}
+jogar.addEventListener('click', jogarCatch);
+jogar1.addEventListener('click', jogarCatch);
+
+
+
+
+
 const dimensoes = document.querySelector('#dimensoes');
 const restart = document.querySelector('#restart');
 
